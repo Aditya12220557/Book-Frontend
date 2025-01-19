@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/Pricing.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1736630250681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736630391793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import React from 'react';\n+\n import { Check } from 'lucide-react';\n \n const PriceCard = ({ \n   title, \n"
+                },
+                {
+                    "date": 1736630407247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     <section className=\"py-20 px-4\">\n       <div className=\"max-w-7xl mx-auto\">\n         <div className=\"text-center mb-12\">\n           <h2 className=\"text-3xl font-bold mb-2\">Simple, Transparent Pricing</h2>\n-          <p className=\"text-gray-600\">Boost efficiency with ScrewFast's clear, value-driven plans.</p>\n+          <p className=\"text-gray-600\">Boost efficiency with ScrewFast s clear, value-driven plans.</p>\n         </div>\n \n         <div className=\"grid md:grid-cols-2 gap-6 max-w-4xl mx-auto\">\n           {plans.map((plan, index) => (\n"
+                },
+                {
+                    "date": 1736630477601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n import { Check } from 'lucide-react';\n-\n+import PropTypes from 'prop-types';\n const PriceCard = ({ \n   title, \n   price, \n   description, \n"
+                },
+                {
+                    "date": 1736630638463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \n import { Check } from 'lucide-react';\n-import PropTypes from 'prop-types';\n+\n+\n const PriceCard = ({ \n   title, \n   price, \n   description, \n"
+                },
+                {
+                    "date": 1736630645271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,9 @@\n import { Check } from 'lucide-react';\n \n \n const PriceCard = ({ \n-  title, \n-  price, \n+  title, price, \n   description, \n   features, \n   buttonText, \n   isHighlighted = false,\n"
+                }
+            ],
+            "date": 1736630250681,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { Check } from 'lucide-react';\n\nconst PriceCard = ({ \n  title, \n  price, \n  description, \n  features, \n  buttonText, \n  isHighlighted = false,\n  tag\n}) => (\n  <div className={`rounded-3xl p-8 ${isHighlighted ? 'bg-orange-500 text-white' : 'bg-gray-900 text-white'}`}>\n    <div className=\"flex flex-col h-full\">\n      {tag && (\n        <div className=\"self-end mb-2\">\n          <span className=\"bg-orange-200 text-orange-700 text-xs px-3 py-1 rounded-full uppercase font-medium\">\n            {tag}\n          </span>\n        </div>\n      )}\n      \n      <h3 className=\"text-2xl font-bold mb-1\">{title}</h3>\n      <p className=\"text-sm text-gray-300 mb-6\">{description}</p>\n      \n      <div className=\"mb-8\">\n        <span className=\"text-5xl font-bold\">{price}</span>\n        <span className=\"text-gray-300 ml-1\">.00</span>\n        <span className=\"text-gray-300 ml-2\">USD / monthly</span>\n      </div>\n\n      <div className=\"space-y-4 mb-8\">\n        {features.map((feature, index) => (\n          <div key={index} className=\"flex items-center space-x-3\">\n            <Check className=\"w-5 h-5 flex-shrink-0\" />\n            <span className={`text-sm ${isHighlighted ? 'text-white' : 'text-gray-300'}`}>\n              {feature}\n            </span>\n          </div>\n        ))}\n      </div>\n\n      <button className={`w-full py-3 rounded-lg mt-auto font-medium transition-colors\n        ${isHighlighted \n          ? 'bg-white text-orange-500 hover:bg-orange-50' \n          : 'bg-gray-700 text-white hover:bg-gray-600'}`}>\n        {buttonText}\n      </button>\n    </div>\n  </div>\n);\n\nconst Pricing = () => {\n  const plans = [\n    {\n      title: \"Starter Kit\",\n      price: \"49\",\n      description: \"Best option for DIY projects\",\n      features: [\n        \"Key hardware tools\",\n        \"Access to guides & tutorials\",\n        \"Standard support\"\n      ],\n      buttonText: \"Get the Starter Kit\"\n    },\n    {\n      title: \"Professional Toolbox\",\n      price: \"89\",\n      description: \"Best for large scale uses\",\n      features: [\n        \"Premium tool selection\",\n        \"Priority support\",\n        \"Exclusive content & deals\",\n        \"Bulk order discounts\"\n      ],\n      buttonText: \"Get the Professional Toolbox\",\n      isHighlighted: true,\n      tag: \"Best value\"\n    }\n  ];\n\n  return (\n    <section className=\"py-20 px-4\">\n      <div className=\"max-w-7xl mx-auto\">\n        <div className=\"text-center mb-12\">\n          <h2 className=\"text-3xl font-bold mb-2\">Simple, Transparent Pricing</h2>\n          <p className=\"text-gray-600\">Boost efficiency with ScrewFast's clear, value-driven plans.</p>\n        </div>\n\n        <div className=\"grid md:grid-cols-2 gap-6 max-w-4xl mx-auto\">\n          {plans.map((plan, index) => (\n            <PriceCard key={index} {...plan} />\n          ))}\n        </div>\n\n        <div className=\"text-center mt-8 space-x-6\">\n          <span className=\"text-gray-600\">Enterprise Solutions?</span>\n          <a href=\"#\" className=\"text-gray-900 font-medium underline\">\n            Get a Custom Quote\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default Pricing;"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1736628840183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736628880033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n       <Home />\n       <BookCarousel />\n       <BookCarousel2 />\n       <PublishingProcess />\n+      <Features\n \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1736629474486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import BookCarousel from \"./components/BookCarousel\";  \n import BookCarousel2 from \"./components/BookCarousel2\";\n import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n import Features from './components/Features';\n+import Footer from \"./components/Footer\";\n \n \n function App() {\n   return (\n@@ -13,9 +14,9 @@\n       <Home />\n       <BookCarousel />\n       <BookCarousel2 />\n       <PublishingProcess />\n-      <Features\n+      <Features/>\n \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1736629490495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import BookCarousel from \"./components/BookCarousel\";  \n import BookCarousel2 from \"./components/BookCarousel2\";\n import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n import Features from './components/Features';\n-import Footer from \"./components/Footer\";\n+import Footer from \"src/components/Footer.jsx\";\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1736629496618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import BookCarousel from \"./components/BookCarousel\";  \n import BookCarousel2 from \"./components/BookCarousel2\";\n import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n import Features from './components/Features';\n-import Footer from \"src/components/Footer.jsx\";\n+import Footer from \".Footer.jsx\";\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1736629502595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import Navbar from \"./components/Navbar\";\n+import Home from \"./pages/Home\";\n+import BookCarousel from \"./components/BookCarousel\";  \n+import BookCarousel2 from \"./components/BookCarousel2\";\n+import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n+import Features from './components/Features';\n+import Footer from \".Footer.jsx\";\n+\n+\n+function App() {\n+  return (\n+    <>\n+      <Navbar />\n+      <Home />\n+      <BookCarousel />\n+      <BookCarousel2 />\n+      <PublishingProcess />\n+      <Features/>\n+      <Fo\n+\n+    </>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736629512251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import Navbar from \"./components/Navbar\";\n+import Home from \"./pages/Home\";\n+import BookCarousel from \"./components/BookCarousel\";  \n+import BookCarousel2 from \"./components/BookCarousel2\";\n+import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n+import Features from './components/Features';\n+import Footer from \".Footer.jsx\";\n+\n+\n+function App() {\n+  return (\n+    <>\n+      <Navbar />\n+      <Home />\n+      <BookCarousel />\n+      <BookCarousel2 />\n+      <PublishingProcess />\n+      <Features/>\n+\n+\n+    </>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736630275023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import BookCarousel from \"./components/BookCarousel\";  \n import BookCarousel2 from \"./components/BookCarousel2\";\n import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n import Features from './components/Features';\n-import Footer from \".Footer.jsx\";\n+import Pricing from './components/Pricing';\n \n \n function App() {\n   return (\n@@ -21,54 +21,5 @@\n     </>\n   );\n }\n \n-export default App;\n-import Navbar from \"./components/Navbar\";\n-import Home from \"./pages/Home\";\n-import BookCarousel from \"./components/BookCarousel\";  \n-import BookCarousel2 from \"./components/BookCarousel2\";\n-import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n-import Features from './components/Features';\n-import Footer from \".Footer.jsx\";\n-\n-\n-function App() {\n-  return (\n-    <>\n-      <Navbar />\n-      <Home />\n-      <BookCarousel />\n-      <BookCarousel2 />\n-      <PublishingProcess />\n-      <Features/>\n-      <Fo\n-\n-    </>\n-  );\n-}\n-\n-export default App;\n-import Navbar from \"./components/Navbar\";\n-import Home from \"./pages/Home\";\n-import BookCarousel from \"./components/BookCarousel\";  \n-import BookCarousel2 from \"./components/BookCarousel2\";\n-import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n-import Features from './components/Features';\n-import Footer from \".Footer.jsx\";\n-\n-\n-function App() {\n-  return (\n-    <>\n-      <Navbar />\n-      <Home />\n-      <BookCarousel />\n-      <BookCarousel2 />\n-      <PublishingProcess />\n-      <Features/>\n-\n-    </>\n-  );\n-}\n-\n export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736630283956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import Navbar from \"./components/Navbar\";\n+import Home from \"./pages/Home\";\n+import BookCarousel from \"./components/BookCarousel\";  \n+import BookCarousel2 from \"./components/BookCarousel2\";\n+import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n+import Features from './components/Features';\n+import Pricing from './components/Pricing';\n+\n+\n+function App() {\n+  return (\n+    <>\n+      <Navbar />\n+      <Home />\n+      <BookCarousel />\n+      <BookCarousel2 />\n+      <PublishingProcess />\n+      <Features/>\n+      <Pricing/>\n+\n+\n+    </>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736630999085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import BookCarousel2 from \"./components/BookCarousel2\";\n import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n import Features from './components/Features';\n import Pricing from './components/Pricing';\n+import DistributionNetwork from './components/DistributionNetwork';\n \n \n function App() {\n   return (\n@@ -22,30 +23,5 @@\n     </>\n   );\n }\n \n-export default App;\n-import Navbar from \"./components/Navbar\";\n-import Home from \"./pages/Home\";\n-import BookCarousel from \"./components/BookCarousel\";  \n-import BookCarousel2 from \"./components/BookCarousel2\";\n-import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n-import Features from './components/Features';\n-import Pricing from './components/Pricing';\n-\n-\n-function App() {\n-  return (\n-    <>\n-      <Navbar />\n-      <Home />\n-      <BookCarousel />\n-      <BookCarousel2 />\n-      <PublishingProcess />\n-      <Features/>\n-\n-\n-    </>\n-  );\n-}\n-\n export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736631004974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n       <BookCarousel2 />\n       <PublishingProcess />\n       <Features/>\n       <Pricing/>\n+      <DistributionNetwork\n \n \n     </>\n   );\n"
+                },
+                {
+                    "date": 1736632224292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n import Features from './components/Features';\n import Pricing from './components/Pricing';\n import DistributionNetwork from './components/DistributionNetwork';\n+import FAQSection from './components/FAQSection';\n \n \n function App() {\n   return (\n@@ -17,9 +18,9 @@\n       <BookCarousel2 />\n       <PublishingProcess />\n       <Features/>\n       <Pricing/>\n-      <DistributionNetwork\n+      <DistributionNetwork/>\n \n \n     </>\n   );\n"
+                },
+                {
+                    "date": 1736632230408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n       <PublishingProcess />\n       <Features/>\n       <Pricing/>\n       <DistributionNetwork/>\n+      <FAQSection/>\n \n \n     </>\n   );\n"
+                },
+                {
+                    "date": 1736632343726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n import Features from './components/Features';\n import Pricing from './components/Pricing';\n import DistributionNetwork from './components/DistributionNetwork';\n import FAQSection from './components/FAQSection';\n+import Footer from './components/Footer';\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1736632349916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n       <Features/>\n       <Pricing/>\n       <DistributionNetwork/>\n       <FAQSection/>\n+      Footer\n \n-\n     </>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1736635148764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import Pricing from './components/Pricing';\n import DistributionNetwork from './components/DistributionNetwork';\n import FAQSection from './components/FAQSection';\n import Footer from './components/Footer';\n+import PricingSection from './components/PricingSection';\n \n \n function App() {\n   return (\n@@ -21,9 +22,9 @@\n       <Features/>\n       <Pricing/>\n       <DistributionNetwork/>\n       <FAQSection/>\n-      Footer\n+      <Footer/>\n \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1736635154033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n       <Pricing/>\n       <DistributionNetwork/>\n       <FAQSection/>\n       <Footer/>\n+      <PricingSection/>\n \n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1736635171545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n       <Pricing/>\n       <DistributionNetwork/>\n       <FAQSection/>\n       <Footer/>\n-      <PricingSection/>\n \n+\n     </>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1736635196496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import Navbar from \"./components/Navbar\";\n+import Home from \"./pages/Home\";\n+import BookCarousel from \"./components/BookCarousel\";  \n+import BookCarousel2 from \"./components/BookCarousel2\";\n+import PublishingProcess from \"./components/PublishingProcess.jsx\";\n+import Features from './components/Features';\n+import Pricing from './components/Pricing';\n+import DistributionNetwork from './components/DistributionNetwork';\n+import FAQSection from './components/FAQSection';\n+import Footer from './components/Footer';\n+import PricingSection from './components/PricingSection';\n+\n+\n+function App() {\n+  return (\n+    <>\n+      <Navbar />\n+      <Home />\n+      <BookCarousel />\n+      <BookCarousel2 />\n+      <PublishingProcess />\n+      <Features/>\n+      <Pricing/>\n+      <DistributionNetwork/>\n+      <FAQSection/>\n+      <Footer/>\n+\n+\n+    </>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736635620211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n import DistributionNetwork from './components/DistributionNetwork';\n import FAQSection from './components/FAQSection';\n import Footer from './components/Footer';\n import PricingSection from './components/PricingSection';\n+import { BrowserRouter as Router } from 'react-router-dom';\n \n \n function App() {\n   return (\n@@ -29,38 +30,5 @@\n     </>\n   );\n }\n \n-export default App;\n-import Navbar from \"./components/Navbar\";\n-import Home from \"./pages/Home\";\n-import BookCarousel from \"./components/BookCarousel\";  \n-import BookCarousel2 from \"./components/BookCarousel2\";\n-import PublishingProcess from \"./pages/PublishingProcess.jsx\";\n-import Features from './components/Features';\n-import Pricing from './components/Pricing';\n-import DistributionNetwork from './components/DistributionNetwork';\n-import FAQSection from './components/FAQSection';\n-import Footer from './components/Footer';\n-import PricingSection from './components/PricingSection';\n-\n-\n-function App() {\n-  return (\n-    <>\n-      <Navbar />\n-      <Home />\n-      <BookCarousel />\n-      <BookCarousel2 />\n-      <PublishingProcess />\n-      <Features/>\n-      <Pricing/>\n-      <DistributionNetwork/>\n-      <FAQSection/>\n-      <Footer/>\n-\n-\n-    </>\n-  );\n-}\n-\n export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736635631730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,15 +7,16 @@\n import Pricing from './components/Pricing';\n import DistributionNetwork from './components/DistributionNetwork';\n import FAQSection from './components/FAQSection';\n import Footer from './components/Footer';\n-import PricingSection from './components/PricingSection';\n+\n import { BrowserRouter as Router } from 'react-router-dom';\n \n \n function App() {\n   return (\n     <>\n+     <Router></Router>\n       <Navbar />\n       <Home />\n       <BookCarousel />\n       <BookCarousel2 />\n"
+                },
+                {
+                    "date": 1736635970548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n function App() {\n   return (\n     <>\n-     <Router></Router>\n+\n       <Navbar />\n       <Home />\n       <BookCarousel />\n       <BookCarousel2 />\n@@ -25,10 +25,10 @@\n       <Pricing/>\n       <DistributionNetwork/>\n       <FAQSection/>\n       <Footer/>\n+      </Router>\n \n-\n     </>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1736635976924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,35 @@\n+import Navbar from \"./components/Navbar\";\n+import Home from \"./pages/Home\";\n+import BookCarousel from \"./components/BookCarousel\";  \n+import BookCarousel2 from \"./components/BookCarousel2\";\n+import PublishingProcess from \"./components/PublishingProcess.jsx\";\n+import Features from './components/Features';\n+import Pricing from './components/Pricing';\n+import DistributionNetwork from './components/DistributionNetwork';\n+import FAQSection from './components/FAQSection';\n+import Footer from './components/Footer';\n+\n+import { BrowserRouter as Router } from 'react-router-dom';\n+\n+\n+// function App() {\n+//   return (\n+//     <>\n+\n+//       <Navbar />\n+//       <Home />\n+//       <BookCarousel />\n+//       <BookCarousel2 />\n+//       <PublishingProcess />\n+//       <Features/>\n+//       <Pricing/>\n+//       <DistributionNetwork/>\n+//       <FAQSection/>\n+//       <Footer/>\n+\n+\n+//     </>\n+//   );\n+// }\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1736635990549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import Pricing from './components/Pricing';\n import DistributionNetwork from './components/DistributionNetwork';\n import FAQSection from './components/FAQSection';\n import Footer from './components/Footer';\n+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\n \n import { BrowserRouter as Router } from 'react-router-dom';\n \n <Router>\n"
+                },
+                {
+                    "date": 1736636019340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n import DistributionNetwork from './components/DistributionNetwork';\n import FAQSection from './components/FAQSection';\n import Footer from './components/Footer';\n import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\n-import\n+import \n \n <Router>\n <div className=\"flex flex-col min-h-screen\">\n   <Navbar />\n"
+                }
+            ],
+            "date": 1736628840183,
+            "name": "Commit-0",
+            "content": "import Navbar from \"./components/Navbar\";\nimport Home from \"./pages/Home\";\nimport BookCarousel from \"./components/BookCarousel\";  \nimport BookCarousel2 from \"./components/BookCarousel2\";\nimport PublishingProcess from \"./pages/PublishingProcess.jsx\";\nimport Features from './components/Features';\n\n\nfunction App() {\n  return (\n    <>\n      <Navbar />\n      <Home />\n      <BookCarousel />\n      <BookCarousel2 />\n      <PublishingProcess />\n\n    </>\n  );\n}\n\nexport default App;"
+        }
+    ]
+}

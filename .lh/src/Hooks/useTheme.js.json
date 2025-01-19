@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Hooks/useTheme.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1736968664680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1736968664680,
+            "name": "Commit-0",
+            "content": "import { theme } from '../config/theme';\n\nexport const useTheme = () => {\n  return theme;\n};"
+        }
+    ]
+}

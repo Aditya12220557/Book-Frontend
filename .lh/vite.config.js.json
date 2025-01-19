@@ -1,0 +1,38 @@
+{
+    "sourceFile": "vite.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1736701740780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736701793909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n import { defineConfig } from 'vite'\n import react from '@vitejs/plugin-react'\n import path from 'path'\n+import { fileURLToPath } from 'url'\n \n-// https://vitejs.dev/config/\n+const __filename = fileURLToPath(import.meta.url)\n+const __dirname = path.dirname(__filename)\n+\n export default defineConfig({\n   plugins: [react()],\n   resolve: {\n     alias: {\n"
+                },
+                {
+                    "date": 1736704969921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import { defineConfig } from 'vite';\n+import react from '@vitejs/plugin-react';\n+import path from 'path';\n+import { fileURLToPath } from 'url';\n+\n+const __filename = fileURLToPath(import.meta.url);\n+const __dirname = path.dirname(__filename);\n+\n+export default defineConfig({\n+  plugins: [react()],\n+  resolve: {\n+    alias: {\n+      '@': path.resolve(__dirname, './src'),\n+    },\n+  },\n+  server: {\n+    host: '0.0.0.0', // Listen on all network interfaces\n+    port: 5173, // Default Vite port (change if needed)\n+    hmr: {\n+      clientPort: 5173, // Ensure HMR works on the second PC\n+    },\n+  },\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737152412978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,26 +14,10 @@\n     },\n   },\n   server: {\n     host: '0.0.0.0', // Listen on all network interfaces\n-    port: 5173, // Default Vite port (change if needed)\n+    port: 518373, // Default Vite port (change if needed)\n     hmr: {\n       clientPort: 5173, // Ensure HMR works on the second PC\n     },\n   },\n-});\n-import { defineConfig } from 'vite'\n-import react from '@vitejs/plugin-react'\n-import path from 'path'\n-import { fileURLToPath } from 'url'\n-\n-const __filename = fileURLToPath(import.meta.url)\n-const __dirname = path.dirname(__filename)\n-\n-export default defineConfig({\n-  plugins: [react()],\n-  resolve: {\n-    alias: {\n-      '@': path.resolve(__dirname, './src'),\n-    },\n-  },\n\\ No newline at end of file\n-})\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737152422538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   server: {\n     host: '0.0.0.0', // Listen on all network interfaces\n     port: 518373, // Default Vite port (change if needed)\n     hmr: {\n-      clientPort: 5173, // Ensure HMR works on the second PC\n+      clientPort: 518373, // Ensure HMR works on the second PC\n     },\n   },\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737152453112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n     },\n   },\n   server: {\n     host: '0.0.0.0', // Listen on all network interfaces\n-    port: 518373, // Default Vite port (change if needed)\n+    port: 9495, // Set the desired port here (9495)\n     hmr: {\n-      clientPort: 518373, // Ensure HMR works on the second PC\n+      clientPort: 9495, // Ensure HMR works on the updated port\n     },\n\\ No newline at end of file\n   },\n-});\n+});\n"
+                }
+            ],
+            "date": 1736701740780,
+            "name": "Commit-0",
+            "content": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\nimport path from 'path'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [react()],\n  resolve: {\n    alias: {\n      '@': path.resolve(__dirname, './src'),\n    },\n  },\n})"
+        }
+    ]
+}

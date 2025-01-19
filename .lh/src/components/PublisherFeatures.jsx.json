@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/PublisherFeatures.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1736965551361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736965559441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import React from 'react';\n+\n import { Book, Star, DollarSign, HandshakeIcon, LineChart, Globe } from 'lucide-react';\n \n const FeatureCard = ({ icon: Icon, title, description }) => (\n   <div className=\"flex flex-col items-start p-6 space-y-4\">\n"
+                },
+                {
+                    "date": 1736965616295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-\n+import React from 'react';\n+import PropTypes from 'prop-types';\n import { Book, Star, DollarSign, HandshakeIcon, LineChart, Globe } from 'lucide-react';\n \n const FeatureCard = ({ icon: Icon, title, description }) => (\n   <div className=\"flex flex-col items-start p-6 space-y-4\">\n@@ -10,8 +11,14 @@\n     <p className=\"text-gray-600 leading-relaxed\">{description}</p>\n   </div>\n );\n \n+FeatureCard.propTypes = {\n+  icon: PropTypes.elementType.isRequired,\n+  title: PropTypes.string.isRequired,\n+  description: PropTypes.string.isRequired,\n+};\n+\n const PublisherFeatures = () => {\n   const features = [\n     {\n       icon: Book,\n"
+                }
+            ],
+            "date": 1736965551361,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { Book, Star, DollarSign, HandshakeIcon, LineChart, Globe } from 'lucide-react';\n\nconst FeatureCard = ({ icon: Icon, title, description }) => (\n  <div className=\"flex flex-col items-start p-6 space-y-4\">\n    <div className=\"w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center\">\n      <Icon className=\"w-6 h-6 text-orange-500\" />\n    </div>\n    <h3 className=\"text-xl font-semibold text-gray-800\">{title}</h3>\n    <p className=\"text-gray-600 leading-relaxed\">{description}</p>\n  </div>\n);\n\nconst PublisherFeatures = () => {\n  const features = [\n    {\n      icon: Book,\n      title: \"PROFESSIONAL PUBLISHING\",\n      description: \"Creating a great book is a craft. From conceptualising to editing to cover design, our team ensures that your book gets the best.\"\n    },\n    {\n      icon: Star,\n      title: \"UNBEATABLE PRICING\",\n      description: \"We use the latest print technology available with the lowest production costs, enabling you to price your book competitively in the market.\"\n    },\n    {\n      icon: DollarSign,\n      title: \"HIGHEST ROYALTY\",\n      description: \"Earn 100% of the net profits on every book you sell. Our distributor network will enable you build an author brand, create growth-hacking strategies.\"\n    },\n    {\n      icon: HandshakeIcon,\n      title: \"QUICK AUTHOR SUPPORT\",\n      description: \"Get a dedicated project flow while publishing and a caring post-publishing support once released. You are provided with best support platforms.\"\n    },\n    {\n      icon: LineChart,\n      title: \"MONTHLY SALES REPORT\",\n      description: \"Check how many books you have sold on a monthly basis instead of waiting for statements. Get accurate book sales data.\"\n    },\n    {\n      icon: Globe,\n      title: \"WORLDWIDE DISTRIBUTION\",\n      description: \"We make your book available in up to 150+ countries as paperback and eBook. We are in partnership with largest global book distribution networks.\"\n    }\n  ];\n\n  return (\n    <div className=\"max-w-7xl mx-auto px-4 py-16\">\n      <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\">\n        {features.map((feature, index) => (\n          <FeatureCard\n            key={index}\n            icon={feature.icon}\n            title={feature.title}\n            description={feature.description}\n          />\n        ))}\n      </div>\n    </div>\n  );\n};\n\nexport default PublisherFeatures;"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/ui/input.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1736701430841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736701652846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,38 +1,36 @@\n-// components/ui/button.jsx\n+// components/ui/input.jsx\n import * as React from \"react\"\n+import PropTypes from 'prop-types'\n \n-const Button = React.forwardRef(({ className, variant = \"default\", size = \"default\", ...props }, ref) => {\n-  const baseStyles = \"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\"\n-  \n-  const variants = {\n-    default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n-    destructive: \"bg-destructive text-destructive-foreground hover:bg-destructive/90\",\n-    outline: \"border border-input bg-background hover:bg-accent hover:text-accent-foreground\",\n-    secondary: \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n-    ghost: \"hover:bg-accent hover:text-accent-foreground\",\n-    link: \"text-primary underline-offset-4 hover:underline\"\n-  }\n-  \n-  const sizes = {\n-    default: \"h-10 px-4 py-2\",\n-    sm: \"h-9 rounded-md px-3\",\n-    lg: \"h-11 rounded-md px-8\",\n-    icon: \"h-10 w-10\"\n-  }\n-\n+const Input = React.forwardRef(({ className, type, ...props }, ref) => {\n   return (\n-    <button\n+    <input\n+      type={type}\n+      className={`flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}\n       ref={ref}\n-      className={`\n-        ${baseStyles}\n-        ${variants[variant]}\n-        ${sizes[size]}\n-        ${className}\n-      `}\n       {...props}\n\\ No newline at end of file\n     />\n   )\n })\n-Button.displayName = \"Button\"\n \n-export { Button }\n+Input.displayName = \"Input\"\n+\n+Input.propTypes = {\n+  className: PropTypes.string,\n+  type: PropTypes.string,\n+  placeholder: PropTypes.string,\n+  value: PropTypes.oneOfType([\n+    PropTypes.string,\n+    PropTypes.number\n+  ]),\n+  onChange: PropTypes.func,\n+  disabled: PropTypes.bool,\n+  name: PropTypes.string\n+}\n+\n+Input.defaultProps = {\n+  className: \"\",\n+  type: \"text\"\n+}\n+\n+export { Input }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1736701430841,
+            "name": "Commit-0",
+            "content": "// components/ui/button.jsx\nimport * as React from \"react\"\n\nconst Button = React.forwardRef(({ className, variant = \"default\", size = \"default\", ...props }, ref) => {\n  const baseStyles = \"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\"\n  \n  const variants = {\n    default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n    destructive: \"bg-destructive text-destructive-foreground hover:bg-destructive/90\",\n    outline: \"border border-input bg-background hover:bg-accent hover:text-accent-foreground\",\n    secondary: \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n    ghost: \"hover:bg-accent hover:text-accent-foreground\",\n    link: \"text-primary underline-offset-4 hover:underline\"\n  }\n  \n  const sizes = {\n    default: \"h-10 px-4 py-2\",\n    sm: \"h-9 rounded-md px-3\",\n    lg: \"h-11 rounded-md px-8\",\n    icon: \"h-10 w-10\"\n  }\n\n  return (\n    <button\n      ref={ref}\n      className={`\n        ${baseStyles}\n        ${variants[variant]}\n        ${sizes[size]}\n        ${className}\n      `}\n      {...props}\n    />\n  )\n})\nButton.displayName = \"Button\"\n\nexport { Button }"
+        }
+    ]
+}

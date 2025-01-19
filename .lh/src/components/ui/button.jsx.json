@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/ui/button.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1736701423369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736701644619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,15 @@\n // components/ui/button.jsx\n import * as React from \"react\"\n+import PropTypes from 'prop-types'\n \n-const Button = React.forwardRef(({ className, variant = \"default\", size = \"default\", ...props }, ref) => {\n+const Button = React.forwardRef(({ \n+  className, \n+  variant = \"default\", \n+  size = \"default\", \n+  children,\n+  ...props \n+}, ref) => {\n   const baseStyles = \"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\"\n   \n   const variants = {\n     default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n@@ -29,10 +36,27 @@\n         ${sizes[size]}\n         ${className}\n       `}\n       {...props}\n-    />\n+    >\n+      {children}\n+    </button>\n   )\n })\n+\n Button.displayName = \"Button\"\n \n+Button.propTypes = {\n+  className: PropTypes.string,\n+  variant: PropTypes.oneOf(['default', 'destructive', 'outline', 'secondary', 'ghost', 'link']),\n+  size: PropTypes.oneOf(['default', 'sm', 'lg', 'icon']),\n+  children: PropTypes.node,\n+  type: PropTypes.string\n+}\n+\n+Button.defaultProps = {\n+  className: \"\",\n+  variant: \"default\",\n+  size: \"default\"\n+}\n+\n export { Button }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1736701423369,
+            "name": "Commit-0",
+            "content": "// components/ui/button.jsx\nimport * as React from \"react\"\n\nconst Button = React.forwardRef(({ className, variant = \"default\", size = \"default\", ...props }, ref) => {\n  const baseStyles = \"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\"\n  \n  const variants = {\n    default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n    destructive: \"bg-destructive text-destructive-foreground hover:bg-destructive/90\",\n    outline: \"border border-input bg-background hover:bg-accent hover:text-accent-foreground\",\n    secondary: \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n    ghost: \"hover:bg-accent hover:text-accent-foreground\",\n    link: \"text-primary underline-offset-4 hover:underline\"\n  }\n  \n  const sizes = {\n    default: \"h-10 px-4 py-2\",\n    sm: \"h-9 rounded-md px-3\",\n    lg: \"h-11 rounded-md px-8\",\n    icon: \"h-10 w-10\"\n  }\n\n  return (\n    <button\n      ref={ref}\n      className={`\n        ${baseStyles}\n        ${variants[variant]}\n        ${sizes[size]}\n        ${className}\n      `}\n      {...props}\n    />\n  )\n})\nButton.displayName = \"Button\"\n\nexport { Button }"
+        }
+    ]
+}

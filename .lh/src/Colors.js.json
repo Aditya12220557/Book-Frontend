@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Colors.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1736968578256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1736968578255,
+            "name": "Commit-0",
+            "content": "// src/config/colors.js\nexport const colors = {\n    primary: {\n      main: 'orange-500',\n      light: 'orange-400',\n      dark: 'orange-600',\n      50: 'orange-50',\n      100: 'orange-100',\n      200: 'orange-200',\n      hover: 'orange-600'\n    },\n    secondary: {\n      main: 'gray-600',\n      light: 'gray-400',\n      dark: 'gray-800',\n      50: 'gray-50',\n      100: 'gray-100',\n      200: 'gray-200',\n      hover: 'gray-700'\n    },\n    text: {\n      primary: 'gray-900',\n      secondary: 'gray-600',\n      light: 'gray-400',\n      white: 'white'\n    },\n    background: {\n      primary: 'white',\n      secondary: 'gray-50',\n      dark: 'gray-900'\n    }\n  };"
+        }
+    ]
+}

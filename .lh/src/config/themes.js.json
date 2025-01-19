@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/config/themes.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1736968612648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736968622065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n // src/config/theme.js\n-import { colors } from './colors';\n+import { colors } from './Colors';\n \n export const theme = {\n   colors,\n   button: {\n"
+                }
+            ],
+            "date": 1736968612648,
+            "name": "Commit-0",
+            "content": "\n// src/config/theme.js\nimport { colors } from './colors';\n\nexport const theme = {\n  colors,\n  button: {\n    primary: {\n      bg: `bg-${colors.primary.main}`,\n      text: `text-${colors.text.white}`,\n      hover: `hover:bg-${colors.primary.hover}`,\n      border: `border-${colors.primary.main}`,\n    },\n    secondary: {\n      bg: `bg-${colors.background.primary}`,\n      text: `text-${colors.text.primary}`,\n      hover: `hover:bg-${colors.secondary[100]}`,\n      border: `border-${colors.secondary.main}`,\n    }\n  },\n  card: {\n    base: `bg-${colors.background.primary} rounded-lg shadow-lg`,\n    highlighted: `bg-${colors.primary.main} text-${colors.text.white}`,\n  },\n  section: {\n    primary: `bg-${colors.background.primary}`,\n    secondary: `bg-${colors.background.secondary}`,\n  }\n};\n"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/BookPublisher.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1736965105007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736965236243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n           <div className=\"relative z-10\">\n             <div className=\"w-full h-96 bg-blue-100 rounded-lg relative overflow-hidden\">\n               <div className=\"absolute inset-0 flex items-center justify-center\">\n                 <img \n-                  src=\"/api/placeholder/600/400\" \n+                  src=\"https://img.freepik.com/free-vector/trick-treat-lettering_52683-44243.jpg?t=st=1736965204~exp=1736968804~hmac=330ba4cb9ce2d6fe6556d2bfe5645655e3dc9d4a7402f39107b53649ded765ef&w=1800\" \n                   alt=\"Woman writing a book\" \n                   className=\"object-cover\"\n                 />\n               </div>\n"
+                },
+                {
+                    "date": 1736965407480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n           <div className=\"relative z-10\">\n             <div className=\"w-full h-96 bg-blue-100 rounded-lg relative overflow-hidden\">\n               <div className=\"absolute inset-0 flex items-center justify-center\">\n                 <img \n-                  src=\"https://img.freepik.com/free-vector/trick-treat-lettering_52683-44243.jpg?t=st=1736965204~exp=1736968804~hmac=330ba4cb9ce2d6fe6556d2bfe5645655e3dc9d4a7402f39107b53649ded765ef&w=1800\" \n+                  src=\"\" \n                   alt=\"Woman writing a book\" \n                   className=\"object-cover\"\n                 />\n               </div>\n"
+                },
+                {
+                    "date": 1736965424520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,12 @@\n       <div className=\"w-full md:w-1/2 mt-12 md:mt-0\">\n         <div className=\"relative\">\n           {/* Illustration of woman writing */}\n           <div className=\"relative z-10\">\n-            <div className=\"w-full h-96 bg-blue-100 rounded-lg relative overflow-hidden\">\n+            <div className=\"w-full h-96  rounded-lg relative overflow-hidden\">\n               <div className=\"absolute inset-0 flex items-center justify-center\">\n                 <img \n-                  src=\"\" \n+                  src=\"assets/img/illustrations/Ecosystem Bro Illustration.png\" \n                   alt=\"Woman writing a book\" \n                   className=\"object-cover\"\n                 />\n               </div>\n"
+                }
+            ],
+            "date": 1736965105007,
+            "name": "Commit-0",
+            "content": "\n\nconst BookPublisher = () => {\n  return (\n    <div className=\"max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between\">\n      <div className=\"w-full md:w-1/2 space-y-6\">\n        <div className=\"inline-block bg-gray-100 px-4 py-2 rounded-lg\">\n          <p className=\"text-gray-700 text-sm\">Economical Book Publishers In India</p>\n        </div>\n        \n        <h1 className=\"text-4xl md:text-5xl font-bold\">\n          <span className=\"text-orange-500\">Still Confused</span>\n          <br />\n          <span className=\"mt-2 block\">How To Publish a Book?</span>\n        </h1>\n        \n        <p className=\"text-gray-600 text-lg leading-relaxed\">\n          OrangeBooks Publication provides you the platform, independence and flexibility \n          to create and share what you love and feel with the entire world through book \n          publishing. With our team of experts, we ll guide you on how to publish a book \n          and sell globally, earning 100% of the profit.\n        </p>\n        \n        <button className=\"bg-orange-500 text-white px-6 py-3 rounded-md \n          hover:bg-orange-600 transition-colors duration-200\">\n          Publish Book Now\n        </button>\n      </div>\n      \n      <div className=\"w-full md:w-1/2 mt-12 md:mt-0\">\n        <div className=\"relative\">\n          {/* Illustration of woman writing */}\n          <div className=\"relative z-10\">\n            <div className=\"w-full h-96 bg-blue-100 rounded-lg relative overflow-hidden\">\n              <div className=\"absolute inset-0 flex items-center justify-center\">\n                <img \n                  src=\"/api/placeholder/600/400\" \n                  alt=\"Woman writing a book\" \n                  className=\"object-cover\"\n                />\n              </div>\n            </div>\n          </div>\n          \n          {/* Decorative elements */}\n          <div className=\"absolute top-4 right-4 w-24 h-24 bg-orange-200 rounded-full opacity-50\" />\n          <div className=\"absolute bottom-4 left-4 w-32 h-32 bg-blue-200 rounded-full opacity-50\" />\n        </div>\n      </div>\n    </div>\n  );\n};\n\nexport default BookPublisher;"
+        }
+    ]
+}

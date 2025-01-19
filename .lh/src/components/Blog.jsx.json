@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/components/Blog.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1736761693056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1736761698889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-import React from 'react';\n \n+\n const BlogHeader = () => {\n   // Sample blog post data - in a real app, this would come from props or an API\n   const featuredPosts = [\n     {\n"
+                },
+                {
+                    "date": 1736762336234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n+e\n \n-\n const BlogHeader = () => {\n   // Sample blog post data - in a real app, this would come from props or an API\n   const featuredPosts = [\n     {\n"
+                },
+                {
+                    "date": 1736762346264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-e\n \n+\n const BlogHeader = () => {\n   // Sample blog post data - in a real app, this would come from props or an API\n   const featuredPosts = [\n     {\n"
+                },
+                {
+                    "date": 1736762412391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n               {/* Author Info */}\n               <div className=\"flex items-center gap-3\">\n                 <div className=\"w-10 h-10 rounded-full bg-neutral-200 overflow-hidden\">\n                   <img \n-                    src=\"/api/placeholder/40/40\" \n+                    src=\"https://images.unsplash.com/photo-1517673132405-a56a62b18caf?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" \n                     alt={post.author}\n                     className=\"w-full h-full object-cover\"\n                   />\n                 </div>\n"
+                },
+                {
+                    "date": 1736762455749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       title: \"Enhancing Safety and Workmanship with ScrewFast Construction Services\",\n       subtitle: \"Quality construction services for lasting results\",\n       author: \"Brad\",\n       date: \"Feb 10, 2024\",\n-      image: \"/api/placeholder/600/400\"\n+      image: \"https://images.unsplash.com/photo-1490332695540-5acc256ec383?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n     },\n     {\n       id: 2,\n       title: \"Maximizing Efficiency with ScrewFast's Cutting-Edge Tools\",\n@@ -51,9 +51,9 @@\n               {/* Author Info */}\n               <div className=\"flex items-center gap-3\">\n                 <div className=\"w-10 h-10 rounded-full bg-neutral-200 overflow-hidden\">\n                   <img \n-                    src=\"https://images.unsplash.com/photo-1517673132405-a56a62b18caf?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" \n+                    src=\"/api/placeholder/40/40\" \n                     alt={post.author}\n                     className=\"w-full h-full object-cover\"\n                   />\n                 </div>\n"
+                },
+                {
+                    "date": 1736762500236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       title: \"Maximizing Efficiency with ScrewFast's Cutting-Edge Tools\",\n       subtitle: \"Innovating Construction Efficiency with Precision Tools & Support\",\n       author: \"Jacob\",\n       date: \"Feb 5, 2024\",\n-      image: \"/api/placeholder/600/400\"\n+      image: \"https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n     }\n   ];\n \n   return (\n"
+                }
+            ],
+            "date": 1736761693056,
+            "name": "Commit-0",
+            "content": "import React from 'react';\n\nconst BlogHeader = () => {\n  // Sample blog post data - in a real app, this would come from props or an API\n  const featuredPosts = [\n    {\n      id: 1,\n      title: \"Enhancing Safety and Workmanship with ScrewFast Construction Services\",\n      subtitle: \"Quality construction services for lasting results\",\n      author: \"Brad\",\n      date: \"Feb 10, 2024\",\n      image: \"/api/placeholder/600/400\"\n    },\n    {\n      id: 2,\n      title: \"Maximizing Efficiency with ScrewFast's Cutting-Edge Tools\",\n      subtitle: \"Innovating Construction Efficiency with Precision Tools & Support\",\n      author: \"Jacob\",\n      date: \"Feb 5, 2024\",\n      image: \"/api/placeholder/600/400\"\n    }\n  ];\n\n  return (\n    <div className=\"w-full bg-neutral-100 px-4 py-16\">\n      {/* Header Section */}\n      <div className=\"mx-auto max-w-4xl text-center mb-16\">\n        <h1 className=\"text-5xl font-bold text-neutral-900 mb-6\">\n          Your Gateway to Construction Excellence\n        </h1>\n        <p className=\"text-lg text-neutral-600\">\n          Explore the latest news, tips, and insights from ScrewFast to enhance your construction projects. \n          From product spotlights to project management strategies, our blog is your go-to resource for all \n          things hardware and construction.\n        </p>\n      </div>\n\n      {/* Featured Posts Grid */}\n      <div className=\"mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6\">\n        {featuredPosts.map((post) => (\n          <div key={post.id} className=\"relative rounded-xl overflow-hidden bg-neutral-900 group\">\n            {/* Background Image */}\n            <img \n              src={post.image} \n              alt={post.title}\n              className=\"w-full h-96 object-cover opacity-80\"\n            />\n            \n            {/* Content Overlay */}\n            <div className=\"absolute inset-0 p-6 flex flex-col justify-between bg-gradient-to-t from-black/70 to-transparent\">\n              {/* Author Info */}\n              <div className=\"flex items-center gap-3\">\n                <div className=\"w-10 h-10 rounded-full bg-neutral-200 overflow-hidden\">\n                  <img \n                    src=\"/api/placeholder/40/40\" \n                    alt={post.author}\n                    className=\"w-full h-full object-cover\"\n                  />\n                </div>\n                <div className=\"flex flex-col\">\n                  <span className=\"text-white font-medium\">{post.author}</span>\n                  <span className=\"text-neutral-300 text-sm\">{post.date}</span>\n                </div>\n              </div>\n\n              {/* Post Title and Subtitle */}\n              <div>\n                <h2 className=\"text-2xl font-bold text-white mb-2\">\n                  {post.title}\n                </h2>\n                <p className=\"text-neutral-200\">\n                  {post.subtitle}\n                </p>\n              </div>\n            </div>\n          </div>\n        ))}\n      </div>\n    </div>\n  );\n};\n\nexport default BlogHeader;"
+        }
+    ]
+}

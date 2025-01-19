@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/pages/TransactionItem.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1736894881735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1736894881735,
+            "name": "Commit-0",
+            "content": "import React from 'react';\n\nconst TransactionItem = ({ iconSrc, title, subtitle, amount, currency }) => {\n  return (\n    <li className=\"d-flex align-items-center mb-6\">\n      <div className=\"avatar flex-shrink-0 me-3\">\n        <img src={iconSrc} alt={title} className=\"rounded\" />\n      </div>\n      <div className=\"d-flex w-100 flex-wrap align-items-center justify-content-between gap-2\">\n        <div className=\"me-2\">\n          <small className=\"d-block\">{subtitle}</small>\n          <h6 className=\"fw-normal mb-0\">{title}</h6>\n        </div>\n        <div className=\"user-progress d-flex align-items-center gap-2\">\n          <h6 className=\"fw-normal mb-0\">{amount}</h6>\n          <span className=\"text-muted\">{currency}</span>\n        </div>\n      </div>\n    </li>\n  );\n};\n\nexport default TransactionItem;"
+        }
+    ]
+}
